@@ -44,7 +44,10 @@ const Task = (props) => {
                         Due: {props.deadline}
                     </Typography>
                     </Box>
-                    <Chip title={props.priority} /> 
+                    <Chip label={props.priority} sx={{
+                            padding: '20px',
+                            display:'flex'
+                            }} /> 
                     <Typography
                         component="p"
                         variant="subtitle1"
